@@ -30,3 +30,4 @@ test/data/
 /gradle/
 /gradlew
 /gradlew.bat
+src/seedu/addressbook/GottaIgnoreThisMan.java
