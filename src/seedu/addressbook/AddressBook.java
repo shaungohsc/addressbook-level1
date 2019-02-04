@@ -182,6 +182,7 @@ public class AddressBook {
      * List of all persons in the address book.
      */
     private static final ArrayList<String[]> ALL_PERSONS = new ArrayList<>();
+    public static final char DELIM = '\t';
 
     /**
      * Stores the most recent list of persons shown to the user as a result of a user command.
@@ -643,7 +644,7 @@ public class AddressBook {
         for (int i = 0; i < persons.size(); i++) {
             final String[] person = persons.get(i);
             final int displayIndex = i + DISPLAYED_INDEX_OFFSET;
-            messageAccumulator.append('\t')
+            messageAccumulator.append(DELIM)
                               .append(getIndexedPersonListElementMessage(displayIndex, person))
                               .append(LS);
         }
